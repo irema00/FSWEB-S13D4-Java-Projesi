@@ -23,4 +23,11 @@ public class Player {
         return this.healthPercentage;
     }
 
+    public void loseHealth(int damage) {
+        if (this.healthPercentage > 0) {
+            this.healthPercentage -= damage;
+        } else {
+            System.out.println(name + " player has been knocked out of game");
+        }
+    }
 }

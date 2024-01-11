@@ -13,7 +13,9 @@ public class Player {
 
     public Player(String name, int healthPercentage, Weapon weapon) {
         this.name = name;
-        this.healthPercentage = healthPercentage;
+        if (healthPercentage > 100) {
+            this.healthPercentage = 100;
+        } else this.healthPercentage = Math.max(healthPercentage, 0);
         this.weapon = weapon;
     }
 }

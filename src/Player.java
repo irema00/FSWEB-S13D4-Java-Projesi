@@ -18,4 +18,9 @@ public class Player {
         } else this.healthPercentage = Math.max(healthPercentage, 0);
         this.weapon = weapon;
     }
+
+    public int healthRemaining() {
+        return this.healthPercentage;
+    }
+
 }

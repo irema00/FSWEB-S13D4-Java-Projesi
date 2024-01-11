@@ -10,4 +10,10 @@ public class Player {
         MACE,
         DAGGER
     }
+
+    public Player(String name, int healthPercentage, Weapon weapon) {
+        this.name = name;
+        this.healthPercentage = healthPercentage;
+        this.weapon = weapon;
+    }
 }

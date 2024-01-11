@@ -30,4 +30,11 @@ public class Player {
             System.out.println(name + " player has been knocked out of game");
         }
     }
+
+    public void restoreHealth(int healthPotion) {
+        this.healthPercentage += healthPotion;
+        if (this.healthPercentage > 100) {
+            this.healthPercentage = 100;
+        }
+    }
 }
